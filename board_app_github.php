@@ -94,7 +94,7 @@ if(!empty($_POST["name"]) && !empty($_POST["comment"]) && !empty($_POST["post_pa
     $result->bindParam(":name", $update_name, PDO::PARAM_STR);
     $result->bindParam(":comment", $update_comment, PDO::PARAM_STR);
     $result->bindParam(":id", $update_number, PDO::PARAM_INT);
-    $result->bindParam(":post_pass", $update_pass, PDO::PARAM_INT);
+    $result->bindParam(":post_pass", $update_pass, PDO::PARAM_STR);
     $result->execute();
 }
 
